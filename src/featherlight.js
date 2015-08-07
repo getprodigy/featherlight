@@ -506,7 +506,7 @@
 			},
 
 			onResize: function(_super, event){
-				if (this.$content.naturalWidth) {
+				if (this.$content && this.$content.naturalWidth) {
 					var w = this.$content.naturalWidth, h = this.$content.naturalHeight;
 					/* Reset apparent image size first so container grows */
 					this.$content.css('width', '').css('height', '');
